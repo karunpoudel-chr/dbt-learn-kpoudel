@@ -16,6 +16,7 @@ with Orders as (
     select
         o.Customer_id
         ,o.order_id
+        ,o.order_date
         ,o.status
         ,op.Amount
     from Orders o
