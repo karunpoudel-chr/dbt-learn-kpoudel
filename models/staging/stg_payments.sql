@@ -5,4 +5,4 @@ select
     ,Status
     ,Amount/100 Amount
     ,Created Created_At
-from raw.stripe.payment
+from {{ source('stripe', 'payment') }}
